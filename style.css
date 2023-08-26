@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+}
+
+.heading {
+    color: #fff;
+    font-size: 26px;
+    margin: 5px;
+    padding-top: 4px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+
+
+}
+
+.menu li:hover {
+    background-color: #48637e;
+}
+
+.bar-item {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: none;
+    font-size: 20px;
+}
+
+.active {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .bar-item {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .menu ul {
+        flex-direction: column;
+        background-color: #34495e;
+        width: 100%;
+
+    }
+
+    .menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px;
+
+    }
+
+
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .menu .active {
+        display: flex;
+    }
+}
+
+
+.home-page {
+    background-image: url("https://res.cloudinary.com/dndhjbuy4/image/upload/v1688548992/GettyImages-1144319087-1536x864_qh8lzy.webp");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    justify-content: center;
+}
+
+.home-heading {
+    text-align: center;
+    cursor: none;
+    color: violet;
+
+}
+
+h3 {
+    color: violet;
+}
+
+.about-page {
+    background-image: url("https://res.cloudinary.com/dndhjbuy4/image/upload/v1688550775/img_170425_onlinepayment_oystqj.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.about-heading {
+    color: violet;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.about-paragraph {
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-page {
+    background-image: linear-gradient(to right, #b0e0e6, #d3ffce);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.contact-page {
+    background-image: linear-gradient(to right, #f0f8ff, #b0e0e6);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.individual-img {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+}
+
+.mob {
+    text-align: center;
+    color: violet;
+}
+
+.services-heading {
+    overflow: hidden;
+    font-size: 24px;
+
+}
+
+.services-paragraph {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.lm {
+    color: #ffffff;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.contact-page {
+    align-items: center;
+}
+
+.message-control {
+    height: 100px;
+}
+
+.message-heading {
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}

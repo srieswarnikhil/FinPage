@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3496c27bda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="heading">FinEdge</div>
+        <i class="fa-solid fa-bars bar-item"></i>
+        <div class="menu">
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About Us</a></li>
+                <li><a href="#serviceSection">Services</a></li>
+                <li><a href="#contactSection">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="homeSection" class="home-page d-flex flex-column">
+        <h1 class="home-heading">Home</h1>
+    </div>
+    <div id="aboutSection" class="about-page d-flex flex-column">
+        <h1 class="about-heading">Who We Are</h1>
+        <p class="about-paragraph">FinEdge is a cutting-edge fintech startup dedicated to revolutionizing
+            cross-border payments. Their vision is to enable seamless transactions for individuals and
+            businesses, transcending geographical boundaries.</p>
+        <div>
+            <button class="btn btn-primary">Our Vision</button>
+        </div>
+    </div>
+
+    <div id="serviceSection" class="services-page d-flex flex-column justify-content-center pt-1 pb-2 pr-2">
+        <h3 class="pb-2 text-center">Services</h3>
+        <div class="d-flex flex-row m-1">
+            <div class="service-first col-5 d-flex ml-1">
+                <img src="https://res.cloudinary.com/dndhjbuy4/image/upload/v1688553797/istockphoto-1289220813-612x612_rbbbhs.jpg" class="individual-img" />
+            </div>
+            <div class="individual-img col-7">
+                <h1 class="services-heading">Individual Money Transfer</h1>
+                <p class="services-paragraph">A bank can assist with many types of transfers.
+                    If you're simply transferring money from one account to another within the
+                    same financial institution We will provide security and monitoring and very
+                    quickly. </p>
+            </div>
+        </div>
+        <div class="d-flex flex-row m-2 ">
+            <div class="service-first col-5 d-flex ml-1">
+                <img src="https://res.cloudinary.com/dndhjbuy4/image/upload/v1688664146/payment-systems_sauxze.jpg" class="individual-img" />
+            </div>
+            <div class="individual-img col-7">
+                <h1 class="services-heading">Business Payments</h1>
+                <p class="services-paragraph">As a business owner, there are several things
+                    you need to take care of while setting up a business. Marketing, listing out
+                    your products or services, delivery, etc., may eat up your time. However, business
+                    owners often miss making an informed decision on setting up a vital channel for sending
+                    and receiving business payments for their entity.</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row ml-2 mr-2">
+            <div class="service-first col-5 d-flex ml-1">
+                <img src="https://res.cloudinary.com/dndhjbuy4/image/upload/v1688664384/RTP_Brochure-tile_jygufq.webp" class="individual-img" />
+            </div>
+            <div class="individual-img col-7">
+                <h1 class="services-heading">Real-time paymeny tracking</h1>
+                <p class="services-paragraph">Real-time payments could provide a critical lifeline
+                    for businesses when receiving from customers and sending to vendors and creditors.
+                    In today’s unstable economic climate, SMBs need all the payments help they can get.
+
+                    The “Real-Time Payments Tracker®” examines how real-time payments can help SMBs
+                    mitigate cash flow problems. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactSection" class="contact-page d-flex flex-column justify-content-center">
+        <h3 class="pb-3">Contact</h3>
+        <p class="message-heading">Please Enter Your Details</p>
+        <form id="customerInformation">
+            <div class="mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control w-100" id="name" />
+                <p id="nameErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control w-100" id="email" />
+                <p id="emailErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <label for="message">Message</label>
+                <input type="text" class="form-control message-control w-100" id="message" />
+                <p id="messageErrMsg" class="error-message"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
